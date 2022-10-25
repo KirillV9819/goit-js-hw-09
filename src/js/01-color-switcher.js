@@ -5,12 +5,12 @@ const stopBtn = document.querySelector("button[data-stop]");
 stopBtn.disabled = true;
 
 startBtn.addEventListener("click", () => {
+    startBtn.disabled = true;
+    stopBtn.disabled = false;
      timerId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
     }
     , 1000);
-    startBtn.disabled = true;
-    stopBtn.disabled = false;
   });
 
 stopBtn.addEventListener("click", () => {
