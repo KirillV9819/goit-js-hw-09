@@ -16,7 +16,8 @@ startBtn.addEventListener("click", () => {
      timerId = setInterval(() => {
     body.style.backgroundColor = getRandomHexColor();
     }
-    , 1000);
+       , 1000);
+  return;
   });
 
 function getRandomHexColor() {
